@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>CRUD OPERATION</title>
+
+    <link rel="stylesheet" href="index.css" type="text/css">
+
+</head>
+<body>
+    <h1> CRUD OPERATION</h1>
+ <table>
+     <tr>
+        <td>
+            <form onsubmit="onFormSubmit()"autocomplete="off">
+              <div>
+                    <label for="prod-code">Production Code</label>
+                    <input type="text" id="prodCode" name="prodCode">
+                </div>
+                <div>
+                    <label for="prod-name">Production Name</label>
+                    <input type="text" id="prodName" name="prodName">
+                </div>
+                <div>
+                    <label for="prod-qty">Quantity</label>
+                    <input type="number" id="prodqty" name="prodqty">
+                </div>
+                <div>
+                    <label for="prod-price">Price</label>
+                    <input type="number" id="prodprice" name="prodprice">
+                </div>
+                <div class="form-action--button">
+                    <input type="submit" value="Submit" id="cal">
+                    <input type="reset" value="Reset" id="new">
+                </div>
+            </form>
+            <td>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>Product Code</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </td>
+        </td>
+     </tr>
+ </table>
+ <script type="text/javascript" src="./file.js"></script>
+</body>
+
+</html>
